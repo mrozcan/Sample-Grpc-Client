@@ -3,16 +3,15 @@ syntax = "proto3";
 option csharp_namespace = "SampleGrpcClient";
 
 // Imports
-import "google/protobuf/timestamp.proto";
 import "google/protobuf/wrappers.proto";
 
 package sample;
 
 message SampleData {
-  string Id = 1;
-  google.protobuf.Timestamp CreateDate = 2;
-  google.protobuf.Timestamp UpdateDate = 3;
-  string SampleStringData = 4;
+  google.protobuf.StringValue Id = 1;
+  google.protobuf.StringValue CreateDate = 2;
+  google.protobuf.StringValue UpdateDate = 3;
+  google.protobuf.StringValue SampleStringData = 4;
   google.protobuf.Int32Value SampleIntData = 5;
 }
 
